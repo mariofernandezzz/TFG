@@ -6,6 +6,7 @@ Este repositorio contiene el código, datos y recursos utilizados para el desarr
 
 ## 📁 Estructura del repositorio
 
+```
 TFG/
 ├── data/
 │ ├── digcomp/
@@ -30,7 +31,7 @@ TFG/
 │   ├── results_esco.x # Fichero con los resultados de filtrado de minería de texto
 │ 
 ├── README.md # Descripción general del proyecto
-
+```
 
 
 ---
@@ -45,6 +46,7 @@ Puedes usar directamente los notebooks desde Google Colab con los siguientes pas
 ```python
 !git clone https://github.com/tu_usuario/TFG.git
 %cd TFG
+```
 
 3. Asegúrate de que las rutas relativas funcionen (los notebooks ya están preparados para eso).
 
@@ -62,9 +64,9 @@ Tokenización, eliminación de stopwords y lematización con spaCy.
 - Salida estructurada y ordenada para facilitar el análisis interpretativo.
 
 ## 📚 Marcos de referencia utilizados
-- DigComp (Marco Europeo de Competencias Digitales)
+- **DigComp** (Marco Europeo de Competencias Digitales)
 
-- ESCO (Clasificación Europea de Competencias, Cualificaciones y Ocupaciones)
+- **ESCO** (Clasificación Europea de Competencias, Cualificaciones y Ocupaciones)
 
 ## 📝 Autor
 Mario Fernández Rueda

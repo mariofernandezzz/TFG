@@ -10,9 +10,9 @@ Este repositorio contiene el código, datos y recursos utilizados para el desarr
 TFG/
 ├── data/
 │ ├── digcomp/
-│ │ └── *.csv # Datos de texto agrupado y preprocesado para DigComp
+│ │ └── *.csv # Archivos de tablas usadas de DigComp
 │ └── esco/
-│ └── *.csv # Datos de texto agrupado y preprocesado para ESCO
+│ └── *.csv # Archivos de la única tabla de ESCO que pasó por diferentes fases
 ├── notebooks/
 │ ├── mining_digcomp.ipynb # Minería de textos para DigComp
 │ ├── compare_to_digcomp.ipynb # Comparación de textos externos con DigComp
@@ -24,10 +24,10 @@ TFG/
 │ └── tokens_revisar_esco.csv # Tokens a revisar (ESCO)
 ├── results/
 │ ├── digcomp/
-│ │ ├── *.csv # 7 matrices de frecuencia y resultados
+│ │ ├── *.csv # 7 matrices de frecuencias
 │ │ ├── results_digcomp.x # Fichero con los resultados de filtrado de minería de texto
 │ └── esco/
-│   ├── frecuencias_esco.csv # 7 matrices de frecuencia y resultados
+│   ├── frecuencias_esco.csv # Matriz de frecuencia
 │   ├── results_esco.x # Fichero con los resultados de filtrado de minería de texto
 │ 
 ├── README.md # Descripción general del proyecto
@@ -53,7 +53,7 @@ Puedes usar directamente los notebooks desde Google Colab con los siguientes pas
 4. Ejecuta las celdas en orden. El código procesará el texto, lo mapeará y lo comparará con los grupos de competencias usando matrices de frecuencia.
 
 ## 🧩 Funcionalidades principales
-Tokenización, eliminación de stopwords y lematización con spaCy.
+- Tokenización, eliminación de stopwords y lematización con spaCy.
 
 - Mapeo léxico personalizado para unificar términos relacionados.
 
@@ -69,5 +69,5 @@ Tokenización, eliminación de stopwords y lematización con spaCy.
 - **ESCO** (Clasificación Europea de Competencias, Cualificaciones y Ocupaciones)
 
 ## 📝 Autor
-Mario Fernández Rueda
+Mario Fernández Rueda \
 Grado en Ingeniería Informática – Universidad de Alcalá

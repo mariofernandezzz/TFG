@@ -10,10 +10,11 @@ Este repositorio contiene el código, datos y recursos utilizados para el desarr
 TFG/
 ├── data/
 │ ├── digcomp/
-│ │ └── *.csv # Archivos de tablas usadas de DigComp
+│ │ └── *.csv # Archivos de tablas usadas de DigComp y base de datos Access
 │ └── esco/
 │ └── *.csv # Archivos de la única tabla de ESCO que pasó por diferentes fases
 ├── notebooks/
+│ ├── requirements.txt # Fichero con las bibliotecas a instalar
 │ ├── mining_digcomp.ipynb # Minería de textos para DigComp
 │ ├── compare_to_digcomp.ipynb # Comparación de textos externos con DigComp
 │ ├── mining_esco.ipynb # Minería de textos para ESCO
@@ -29,7 +30,6 @@ TFG/
 │ └── esco/
 │   ├── frecuencias_esco.csv # Matriz de frecuencia
 │   ├── results_esco.x # Fichero con los resultados de filtrado de minería de texto
-│ 
 ├── README.md # Descripción general del proyecto
 ```
 

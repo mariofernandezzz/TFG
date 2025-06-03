@@ -14,12 +14,12 @@ TFG/
 │ └── esco/
 │ └── *.csv # Archivos de la única tabla de ESCO que pasó por diferentes fases
 ├── notebooks/
-│ ├── requirements.txt # Fichero con las bibliotecas a instalar
 │ ├── mining_digcomp.ipynb # Minería de textos para DigComp
 │ ├── compare_to_digcomp.ipynb # Comparación de textos externos con DigComp
 │ ├── mining_esco.ipynb # Minería de textos para ESCO
 │ └── compare_to_esco.ipynb # Comparación de textos externos con ESCO
 ├── utils/
+│ ├── requirements.txt # Fichero con las bibliotecas a instalar
 │ ├── mapping.csv # Archivo de mapeo léxico
 │ ├── tokens_revisar_digcomp.csv # Tokens a revisar (DigComp)
 │ └── tokens_revisar_esco.csv # Tokens a revisar (ESCO)
@@ -38,19 +38,39 @@ TFG/
 
 ## ⚙️ Cómo ejecutar el código en Google Colab
 
-Puedes usar directamente los notebooks desde Google Colab con los siguientes pasos:
+1. Clona el repositorio
+Abre una terminal y clona el repositorio:
 
-1. Abre un notebook de `notebooks/` en Google Colab (ej. `compare_to_digcomp.ipynb`).
-2. En la primera celda, clona el repositorio:
-
-```python
-!git clone https://github.com/tu_usuario/TFG.git
-%cd TFG
 ```
+git clone https://github.com/tu_usuario/TFG.git
+cd TFG 
+```
+2. Instala las dependencias
+Asegúrate de tener pip actualizado, y luego instala todo lo necesario:
+```
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+3. Descarga el modelo de spaCy
+Uno de los notebooks usa el modelo grande en inglés. Descárgalo con:
+```
+python -m spacy download en_core_web_lg
+```
+4. Abre los notebooks
+Puedes abrir cualquier notebook desde la carpeta notebooks/ usando Jupyter:
+```
+jupyter notebook
+```
+o, si usas VS Code:
 
-3. Asegúrate de que las rutas relativas funcionen (los notebooks ya están preparados para eso).
+Abre la carpeta del proyecto.
 
-4. Ejecuta las celdas en orden. El código procesará el texto, lo mapeará y lo comparará con los grupos de competencias usando matrices de frecuencia.
+Ve al archivo deseado en notebooks/ y ábrelo como notebook interactivo.
+
+5. Ejecuta los notebooks
+Todos los notebooks están preparados para funcionar con rutas relativas, por lo que puedes ejecutar las celdas en orden sin necesidad de modificar las rutas.
+
+**AVISO**: El código se ha desarrollado con Python 3.12.8, por lo que se recomienda el uso de esta versión para la ejecución del código y evitar fallos.
 
 ## 🧩 Funcionalidades principales
 - Tokenización, eliminación de stopwords y lematización con spaCy.
